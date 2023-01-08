@@ -13,6 +13,11 @@
   }
 }
 
+@keyframes expand {
+  from   {width: 50px}
+  to  {width: 400px}
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +27,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.animate {
+  transition: transform .35s ease-in-out;
+}
+
+.animate.grow {
+  transform: scale(1.5);
 }
 
 .App-link {
